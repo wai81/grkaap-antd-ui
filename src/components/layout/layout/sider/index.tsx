@@ -221,8 +221,8 @@ export const Sider: typeof DefaultSider = ({ render }) => {
           Menu: {
             colorItemBg: "transparent",
             colorItemText: "#fff",
-            //colorItemTextSelected: "#fff",
-            //colorItemBgSelected: "transparent",
+            colorItemTextSelected: "#fff",
+            colorItemBgSelected: "#0050b3",
             colorItemTextHover: "#fff",
           },
         },
