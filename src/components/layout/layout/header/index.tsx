@@ -42,7 +42,11 @@ export const Header: React.FC = () => {
             </span>
           }
         >
-          {lang === "en" ? "English" : "German"}
+          {lang === 'en'
+                      ? 'English'
+                      : lang === 'de'
+                      ? 'German'
+                      : 'Русский'}
         </Menu.Item>
       ))}
     </Menu>
@@ -68,7 +72,11 @@ export const Header: React.FC = () => {
         <Button type="link">
           <Space>
             <Avatar size={16} src={`/images/flags/${currentLocale}.svg`} />
-            {currentLocale === "en" ? "English" : "German"}
+            {currentLocale === "en"
+              ? "English"
+              : currentLocale === "de"
+              ? "German"
+              : "Русский"}
             <DownOutlined />
           </Space>
         </Button>

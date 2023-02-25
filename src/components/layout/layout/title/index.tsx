@@ -15,7 +15,7 @@ export const Title: React.FC<TitleProps> = ({ collapsed }) => (
         }}
       >
         <img
-          src="https://refine.ams3.cdn.digitaloceanspaces.com/logo/refine-mini.svg"
+          src="/grcapp-collapsed_2.svg"
           alt="Refine"
           style={{
             margin: "0 auto",
@@ -26,7 +26,7 @@ export const Title: React.FC<TitleProps> = ({ collapsed }) => (
       </div>
     ) : (
       <img
-        src="https://refine.ams3.cdn.digitaloceanspaces.com/logo/refine.svg"
+        src="/grcapp_3.svg"
         alt="Refine"
         style={{
           width: "200px",

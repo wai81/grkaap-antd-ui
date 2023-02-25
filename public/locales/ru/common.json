@@ -1,0 +1,339 @@
+{
+  "pages": {
+    "login": {
+      "title": "Войдите в свой аккаунт",
+      "signin": "Войти",
+      "signup": "Зарегистрироваться",
+      "divider": "или",
+      "fields": {
+        "email": "Эл. адрес",
+        "username": "Имя Пользователя",
+        "password": "Пароль"
+      },
+      "errors": {
+        "validEmail": "Неверный адрес электронной почты"
+      },
+      "buttons": {
+        "submit": "Авторизоваться",
+        "forgotPassword": "Забыли пароль?",
+        "noAccount": "Нет учетной записи?",
+        "rememberMe": "Запомните меня"
+      }
+    },
+    "forgotPassword": {
+      "title": "Забыли свой пароль?",
+      "fields": {
+        "email": "Эл. адрес"
+      },
+      "errors": {
+        "validEmail": "Неверный адрес электронной почты"
+      },
+      "buttons": {
+        "submit": "Отправить инструкции по сбросу"
+      }
+    },
+    "register": {
+      "title": "Зарегистрируйтесь в своей учетной записи",
+      "fields": {
+        "email": "Эл. адрес",
+        "password": "Пароль"
+      },
+      "errors": {
+        "validEmail": "Неверный адрес электронной почты"
+      },
+      "buttons": {
+        "submit": "Регистрация",
+        "haveAccount": "Есть аккаунт?"
+      }
+    },
+    "updatePassword": {
+      "title": "Обновить пароль",
+      "fields": {
+        "password": "Новый пароль",
+        "confirmPassword": "Подтвердите новый пароль"
+      },
+      "errors": {
+        "confirmPasswordNotMatch": "Пароли не совпадают"
+      },
+      "buttons": {
+        "submit": "Обновить"
+      }
+    },
+    "error": {
+      "info": "Возможно, вы забыли добавить {{action}} компонент к {{resource}} ресурсу.",
+      "404": "Извините, страница, которую вы посетили, не существует.",
+      "resource404": "Вы уверены, что создали {{resource}} ресурс.",
+      "backHome": "Домой"
+    }
+  },
+  "actions": {
+    "list": "Список",
+    "create": "Создать",
+    "edit": "Изменить",
+    "show": "Просмотр"
+  },
+  "buttons": {
+    "create": "Создать",
+    "save": "Сохранить",
+    "logout": "Выйти",
+    "delete": "Удалить",
+    "edit": "Редактировать",
+    "cancel": "Отмена",
+    "confirm": "Вы уверены?",
+    "filter": "Фильтр",
+    "clear": "Очистить",
+    "refresh": "Обновить",
+    "show": "Показать",
+    "undo": "Отменить",
+    "import": "Импорт",
+    "clone": "Копировать",
+    "notAccessTitle": "У вас нет разрешения на доступ"
+  },
+  "warnWhenUnsavedChanges": "Вы уверены, что хотите оставить? У вас есть несохраненные изменения.",
+  "notifications": {
+    "success": "Успешно",
+    "error": "Ошибка (код состояния: {{statusCode}})",
+    "undoable": "У вас {{seconds}} секунды, чтобы отменить",
+    "createSuccess": "{{resource}} создан успешно",
+    "createError": "Произошла ошибка при создании {{resource}} (код состояния: {{statusCode}})",
+    "deleteSuccess": "{{resource}} успешно удален",
+    "deleteError": "Ошибка при удалении {{resource}} (код состояния: {{statusCode}})",
+    "editSuccess": "{{resource}} успешно измененен",
+    "editError": "Ошибка при редактировании {{resource}} (код состояния: {{statusCode}})",
+    "importProgress": "Импорт: {{processed}}/{{total}}"
+  },
+  "loading": "Загрузка...",
+  "tags": {
+    "clone": "Клон"
+  },
+  "dashboard": {
+    "title": "Dashboard"
+  },
+  "posts": {
+    "posts": "Пост",
+    "fields": {
+      "id": "Id",
+      "title": "Заголовок",
+      "category": {
+        "title": "Категория",
+        "filter": {
+          "placeholder": "Выберите категорию"
+        }
+      },
+      "status": {
+        "title": "Статус",
+        "published": "Published",
+        "draft": "Draft",
+        "rejected": "Rejected"
+      },
+      "content": "Content",
+      "createdAt": "Created At"
+    },
+    "titles": {
+      "create": "Новый Пост",
+      "edit": "Изменить Пост",
+      "list": "Посты",
+      "show": "Просмотр Поста"
+    }
+  },
+  "table": {
+    "actions": "Действия"
+  },
+  "filter": {
+    "title": "Поиск"
+  },
+  "settings": {
+    "settings":"Настройки"
+  },
+  "reference": {
+    "reference":"Справочники"
+  },
+  "bookingTransport": {
+    "bookingTransport":"Бронь транспорта"
+  },
+
+  "users": {
+    "users": "Пользователи",
+    "fields": {
+      "id": "Id",
+      "username": "Имя Пользователя",
+      "last_name": "Фамилия",
+      "first_name": "Имя",
+      "patronymic": "Отчество",
+      "is_active": "Статус",
+      "status": {
+        "enable": "Активен",
+        "disable": "Не активен"
+      },
+      "is_superuser": "Полные права",
+      "organization": {
+        "title": "Организация",
+        "filter": {
+          "placeholder": "Выберите организацию"
+        }
+      },
+      "password": "Пароль",
+      "created_at": "Cоздан"
+    },
+    "titles": {
+      "create": "Новый Пользователь",
+      "edit": "Редактирование Пользователя",
+      "list": "Пользователи",
+      "show": "Просмотр Пользователя"
+    }
+  },
+  "organizations": {
+    "organizations": "Организации",
+    "fields": {
+      "id": "№ ТОР",
+      "title": "Наименование",
+      "fullname": "Полное Наименование",
+      "is_active": "Статус",
+      "status": {
+        "enable": "Активен",
+        "disable": "Не активен"
+      },
+      "created_at": "Cоздан"
+    },
+    "titles": {
+      "create": "Новая Организация",
+      "edit": "Редактирование Организации",
+      "list": "Организации",
+      "show": "Просмотр Организации"
+    }
+  },
+  "subunits": {
+    "subunits": "Подразделения",
+    "fields": {
+      "id": "Id",
+      "name": "Наименование",
+      "title": "Полное Наименование",
+      "color_subunit": "Цвет",
+      "created_at": "Cоздан",
+      "is_active": "Статус",
+      "status": {
+        "enable": "Активен",
+        "disable": "Не активен"
+      },
+      "organization": {
+        "title": "Организация",
+        "filter": {
+          "placeholder": "Выберите организацию"
+        }
+      }
+    },
+    "filter": {
+      "search": {
+        "label": "Поиск",
+        "placeholder": "Введите строку для поиска"
+      },
+      "organization": {
+        "label": "Организация",
+        "placeholder": "Выберите организацию"
+      },
+      "is_active": {
+        "label": "Статус подразделения",
+        "none": "Все",
+        "true": "Активна",
+        "false": "Не активна"
+      },
+      "submit": "Поиск"
+    },
+    "titles": {
+      "create": "Новое Подразделение",
+      "edit": "Редактирование Подразделения",
+      "list": "Подразделения",
+      "show": "Просмотр Подразделения"
+    }
+  },
+  "transports": {
+    "transports": "Транспорт",
+    "fields": {
+      "title": "Наименование",
+      "details": "Описание",
+      "is_active": "Статус",
+      "status": {
+        "enable": "Активен",
+        "disable": "Не активен"
+      },
+      "created_at": "Cоздан"
+    },
+    "filter": {
+      "search": {
+        "label": "Поиск по наименованию",
+        "placeholder": "Введите строку для поиска"
+      },
+      "is_active": {
+        "label": "Статус транспорта",
+        "none": "Все",
+        "true": "Активен",
+        "false": "Не активен"
+      },
+      "submit": "Поиск"
+    },
+    "titles": {
+      "create": "Новый Транспорт",
+      "edit": "Редактирование Транспорта",
+      "list": "Транспорт",
+      "show": "Просмотр Транспорта"
+    }
+  },
+  "calendar": {
+    "calendar": "Календарь"
+  },
+  "booking_transport": {
+    "booking_transport": "Заказы транспорта",
+    "fields": {
+      "number_order": "Номер заказа",
+      "address_object": "Адрес объекта",
+      "title": "Наименование",
+      "startDate": "Выезд",
+      "duration": "Продолжительность (ч.)",
+      "endDate": "Возвращение",
+      "allDay": "Весь день",
+      "organization": "Организация",
+      "subunit": "Подразделение",
+      "count_man": "Количество чел.",
+      "transport": "Транспорт",
+      "is_active": "Статус",
+      "status": {
+        "enable": "Активен",
+        "disable": "Не активен"
+      },
+      "description": "Примечание",
+      "created_at": "Cоздан"
+    },
+    "filter": {
+      "search": {
+        "label": "Поиск по наименованию",
+        "placeholder": "Введите строку для поиска"
+      },
+      "organization":{
+        "label": "Организация",
+        "placeholder": "Выберите организацию"
+      },
+      "subuinit":{
+        "label": "Подразделение",
+        "placeholder": "Выберите подразделение"
+      },
+      "transport":{
+        "label": "Транспорт",
+        "placeholder": "Выберите транспорт"
+      },
+      "is_active": {
+        "label": "Статус заказа",
+        "none": "Все",
+        "true": "Активен",
+        "false": "Не активен"
+      },
+      "rangeDate": "Преиод",
+      "submit": "Поиск"
+    },
+    "titles": {
+      "create": "Новый Заказ транспорта",
+      "edit": "Редактирование Заказа транспорта",
+      "list": "Заказы транспорта",
+      "show": "Просмотр Заказа транспорта"
+    }
+  }
+}

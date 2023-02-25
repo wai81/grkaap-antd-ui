@@ -21,7 +21,7 @@ import {
   Footer,
   Layout,
   OffLayoutArea,
-} from "components/layout";
+} from "components/layout/layout";
 
 function App() {
   const { t, i18n } = useTranslation();
