@@ -5,6 +5,7 @@ import {
   notificationProvider,
   ReadyPage,
   ErrorComponent,
+  ConfigProvider,
 } from "@pankod/refine-antd";
 import "@pankod/refine-antd/dist/reset.css";
 
@@ -22,6 +23,9 @@ import {
   Layout,
   OffLayoutArea,
 } from "components/layout/layout";
+import ru_RU from 'antd/locale/ru_RU';
+import { ProductCreate, ProductEdit, ProductList } from "pages/products";
+import { ProductShow } from "pages/products/show";
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -34,22 +38,13 @@ function App() {
 
   return (
     <ColorModeContextProvider>
+      <ConfigProvider locale={ru_RU}>
       <RefineKbarProvider>
         <Refine
           dataProvider={dataProvider("https://api.fake-rest.refine.dev")}
           notificationProvider={notificationProvider}
           ReadyPage={ReadyPage}
           catchAll={<ErrorComponent />}
-          resources={[
-            {
-              name: "posts",
-              list: AntdInferencer,
-              edit: AntdInferencer,
-              show: AntdInferencer,
-              create: AntdInferencer,
-              canDelete: true,
-            },
-          ]}
           Title={Title}
           Header={Header}
           Sider={Sider}
@@ -58,8 +53,19 @@ function App() {
           OffLayoutArea={OffLayoutArea}
           routerProvider={routerProvider}
           i18nProvider={i18nProvider}
+          resources={[
+            {
+              name: "products",
+              list: ProductList,
+              edit: ProductEdit,
+              show: ProductShow,
+              create: ProductCreate,
+              canDelete: true,
+            },
+          ]}
         />
       </RefineKbarProvider>
+      </ConfigProvider>
     </ColorModeContextProvider>
   );
 }
