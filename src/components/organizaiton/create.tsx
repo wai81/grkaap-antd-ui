@@ -14,7 +14,6 @@ import {
 } from "@pankod/refine-antd";
 import { Drawer } from "./styled";
 
-const { Text } = Typography;
 
 type CreateOrganizationProps = {
   drawerProps: DrawerProps;

@@ -14,7 +14,6 @@ import {
   Grid,
 } from "@pankod/refine-antd";
 
-const { Text } = Typography;
 
 type EditOrganizationProps = {
   drawerProps: DrawerProps;

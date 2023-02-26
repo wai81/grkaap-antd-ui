@@ -12,7 +12,7 @@ import {
   Table,
   Space,
   EditButton,
-  ShowButton,
+  getDefaultSortOrder,
   DateField,
   BooleanField,
   MarkdownField,
@@ -27,7 +27,7 @@ import { CreateOrganization, EditOrganization } from "components/organizaiton";
 
 export const OrganizationList: React.FC<IResourceComponentsProps> = () => {
   const t = useTranslate();
-  const { tableProps } = useTable<IOrganization, HttpError>({
+  const { tableProps, sorter } = useTable<IOrganization, HttpError>({
     syncWithLocation: true,
   });
   const { show } = useNavigation();
@@ -48,7 +48,7 @@ export const OrganizationList: React.FC<IResourceComponentsProps> = () => {
     formProps: editFormProps,
     saveButtonProps: editSaveButtonProps,
     show: editShow,
-    id 
+    id,
   } = useDrawerForm<IOrganizationUpdate>({
     action: "edit",
     resource: "organizations",
@@ -64,25 +64,37 @@ export const OrganizationList: React.FC<IResourceComponentsProps> = () => {
           },
         }}
       >
-        <Table {...tableProps} rowKey="id"
-        onRow={(record)=>{
-          return{
-            onClick:()=>{
-              show("organizations", record.id)
-            }
-          };
-        }}>
+        <Table
+          {...tableProps}
+          rowKey="id"
+          // onRow={(record) => {
+          //   return {
+          //     onClick: () => {
+          //       show("organizations", record.id);
+          //     },
+          //   };
+          // }}
+        >
           <Table.Column
             dataIndex={["is_active"]}
             title={t("organizations.fields.is_active")}
             render={(value: any) => <BooleanField value={value} />}
+            defaultSortOrder={getDefaultSortOrder("is_active", sorter)}
+            sorter
           />
 
-          <Table.Column dataIndex="id" title={t("organizations.fields.id")} />
+          <Table.Column
+            dataIndex="id"
+            title={t("organizations.fields.id")}
+            defaultSortOrder={getDefaultSortOrder("id", sorter)}
+            sorter
+          />
 
           <Table.Column
             dataIndex="title"
             title={t("organizations.fields.title")}
+            defaultSortOrder={getDefaultSortOrder("title", sorter)}
+            sorter
           />
 
           <Table.Column
@@ -98,10 +110,12 @@ export const OrganizationList: React.FC<IResourceComponentsProps> = () => {
             render={(value: any) => (
               <DateField value={value} format={"DD.MM.YYYY"} />
             )}
+            defaultSortOrder={getDefaultSortOrder("created_at", sorter)}
+            sorter
           />
 
           <Table.Column
-            title="Actions"
+            title={t("table.actions")}
             dataIndex="actions"
             render={(_, record: BaseRecord) => (
               <Space>

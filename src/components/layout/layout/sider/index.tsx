@@ -86,9 +86,9 @@ export const Sider: typeof DefaultSider = ({ render }) => {
         >
           <Menu.Item
             key={route}
-            style={{
-              fontWeight: isSelected ? "bold" : "normal",
-            }}
+            // style={{
+            //   fontWeight: isSelected ? "bold" : "normal",
+            // }}
             icon={icon ?? (isRoute && <UnorderedListOutlined />)}
           >
             <Link to={route}>{label}</Link>
