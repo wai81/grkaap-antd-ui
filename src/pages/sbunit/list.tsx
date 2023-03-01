@@ -63,8 +63,8 @@ export const SubunitList: React.FC<IResourceComponentsProps> = () => {
     },
   });
 
+
   const {
-    //onFinish: onFinishProps,
     drawerProps: createDrawerProps,
     formProps: createFormProps,
     saveButtonProps: createSaveButtonProps,
@@ -82,12 +82,10 @@ export const SubunitList: React.FC<IResourceComponentsProps> = () => {
         xl={6}
         lg={24}
         xs={24}
-
-      >
+		>
         <Filter formProps={searchFormProps} filters={filters || []} />
       </Col>
       <Col xl={18} xs={24}>
-
         <List
             createButtonProps={{
               onClick: () => {
@@ -95,6 +93,7 @@ export const SubunitList: React.FC<IResourceComponentsProps> = () => {
               },
             }}
         >
+
           <Table {...tableProps} rowKey="id">
             <Table.Column
               dataIndex={["is_active"]}
@@ -143,11 +142,13 @@ export const SubunitList: React.FC<IResourceComponentsProps> = () => {
             />
           </Table>
         </List>
+
         <CreateSubunit
             drawerProps={createDrawerProps}
             formProps={createFormProps}
             saveButtonProps={createSaveButtonProps}
         />
+
       </Col>
     </Row>
   );
