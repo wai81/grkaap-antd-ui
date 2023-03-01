@@ -1,4 +1,4 @@
-import {CrudFilters, useOne, useTranslate} from "@pankod/refine-core";
+import {CrudFilters, useTranslate} from "@pankod/refine-core";
 
 import {
   Create,
@@ -13,7 +13,6 @@ import {
   Grid, Drawer, useSelect,Select
 } from "@pankod/refine-antd";
 import {IOrganization} from "../../interfaces/IOrganization";
-import {ICreateSubunit} from "../../interfaces/ISubunit";
 
 
 
@@ -33,8 +32,6 @@ export const CreateSubunit: React.FC<CreateOrganizationProps> = ({
   const t = useTranslate();
   const breakpoint = Grid.useBreakpoint();
 
-
-
   const { selectProps:organizationSelectProps, queryResult } = useSelect<IOrganization>({
     resource: "organizations",
     optionLabel: "title",
@@ -49,8 +46,6 @@ export const CreateSubunit: React.FC<CreateOrganizationProps> = ({
       return filters
     })
   })
-
-
 
   return (
     <Drawer

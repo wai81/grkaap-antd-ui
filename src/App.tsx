@@ -91,7 +91,7 @@ function App() {
                 parentName: "reference",
                 list: SubunitList,
                 //create: AntdInferencer,
-                edit: AntdInferencer,
+                //edit: AntdInferencer,
                 show: AntdInferencer,
                 icon: <Icons.UsergroupAddOutlined />,
               },
