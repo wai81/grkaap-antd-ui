@@ -25,3 +25,4 @@ yarn-error.log*
 /.idea/grkaap-antd-ui.iml
 /.idea/modules.xml
 /.idea/vcs.xml
+/.idea/i18nSettings.xml
