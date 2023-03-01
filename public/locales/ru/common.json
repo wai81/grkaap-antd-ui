@@ -217,9 +217,7 @@
       },
       "organization": {
         "title": "Организация",
-        "filter": {
-          "placeholder": "Выберите организацию"
-        }
+        "placeholder": "Выберите организацию"
       }
     },
     "filter": {

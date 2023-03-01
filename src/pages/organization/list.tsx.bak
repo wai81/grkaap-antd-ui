@@ -67,6 +67,7 @@ export const OrganizationList: React.FC<IResourceComponentsProps> = () => {
         <Table
           {...tableProps}
           rowKey="id"
+<<<<<<< HEAD
           // onRow={(record) => {
           //   return {
           //     onClick: () => {
@@ -74,6 +75,15 @@ export const OrganizationList: React.FC<IResourceComponentsProps> = () => {
           //     },
           //   };
           // }}
+=======
+          onRow={(record) => {
+            return {
+              onClick: () => {
+                show("organizations", record.id);
+              },
+            };
+          }}
+>>>>>>> bf335d7d0ff924f75d5dc78afbc2f4055d8fa7eb
         >
           <Table.Column
             dataIndex={["is_active"]}

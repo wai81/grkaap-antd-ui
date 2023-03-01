@@ -90,7 +90,11 @@ function App() {
                 name: "subunits",
                 parentName: "reference",
                 list: SubunitList,
+<<<<<<< HEAD
                 //create: AntdInferencer,
+=======
+                create: AntdInferencer,
+>>>>>>> bf335d7d0ff924f75d5dc78afbc2f4055d8fa7eb
                 edit: AntdInferencer,
                 show: AntdInferencer,
                 icon: <Icons.UsergroupAddOutlined />,

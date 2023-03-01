@@ -81,8 +81,7 @@ export const SubunitList: React.FC<IResourceComponentsProps> = () => {
       <Col
         xl={6}
         lg={24}
-        xs={24}
-		>
+        xs={24}>
         <Filter formProps={searchFormProps} filters={filters || []} />
       </Col>
       <Col xl={18} xs={24}>
